@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -6,9 +8,13 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 .home-title {
-    color: black
+    color: black;
+    font-family: "Aboreto", Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 .button-box {
     text-align: center;
@@ -32,10 +38,18 @@ main section {
 body {
     background-color: whitesmoke;
     color: black;
+    font-family: "Alumni Sans", "Helvetica", sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
 }
 header {
     background-color: #84a98c;
     color: white;
+    font-family: "Aboreto", Helvetica, sans-serif;
 }
 nav a:hover {
     background-color: #2f3e46;
@@ -46,6 +60,10 @@ nav a:hover {
     background-color: #84a98c;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #2f3e46;
@@ -54,26 +72,42 @@ nav a:hover {
 #background {
     background-color: #cad2c5;
     color: black;
+    margin-bottom: 100px;
 }
 .msg {
     background-color: white;
     color: black;
+    font-size: 1.5em;
+    margin: 200px 0;
+    padding: 35px;
 }
 .msg h2 {
-    color: black
+    color: black;
+    font-family: "Aboreto", Helvetica, sans-serif;
 }
 .msg p {
-    color: black
+    color: black;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer {
     background-color: #84a98c;
     color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
 .logo {
     width: 80px;
 }
+#logo_link {
+    padding-top: 5px;
+}
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 footer a {
     background-color: #84a98c;
@@ -89,4 +123,16 @@ footer p {
 }
 footer p a:hover {
     text-decoration:underline;
+}
+footer.social img {
+    padding-top: 15px;
+}
+.card-img {
+    border: 10px solid #cad2c5;
+}
+main section img {
+    box-sizing: border-box;
+}
+.mountains img {
+    margin-bottom: 200px;
 }
