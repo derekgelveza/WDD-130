@@ -247,3 +247,97 @@ nav {
         margin-top: 25px;
     }
 }
+/*start of new HTML*/
+#faqbox {
+    background-color: #cad2c5;
+    color: black;
+    margin-bottom: 100px;
+    padding: 2rem 0;
+}
+.wrapper{
+    max-width:75%;
+    margin: auto;
+    padding: 2rem 0;
+    box-sizing: border-box;
+}
+.wrapper > p,
+.wrapper > h1{
+    margin: 1.5rem 0;
+    text-align: center;
+}
+.wrapper > h1{
+    letter-spacing: 3px;
+}
+.accordion {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.accordion i{
+    font-size: 1.6rem;
+}
+
+.active, 
+.accordion:hover {
+    background-color: #f1f7f5;
+}
+.pannel {
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+}
+.pannel p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+.faq{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.faq.active{
+    border: none;
+}
+.faq-intro-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.faq-intro-text {
+    grid-column: 2 / 6;
+    font-size: 2.5rem;
+    line-height: 1.6;
+    text-align: center;
+    justify-self: center;
+    align-self: center; /* optional: vertical centering */
+    width: 100%;        /* make it fill the grid area */
+}
+.faq-intro-img {
+    grid-column: 7/10;
+    text-align: center;
+    overflow: hidden;      /* optional: hides any spillover */
+    display: grid;         /* centers the image */
+    justify-content: center;
+    align-items: center;
+}
+.faq-header {
+    grid-column: 7/10;
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.faq-intro {
+    margin: 0;
+    padding: 0;
+}

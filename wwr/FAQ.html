@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitewater Rafting Vacations | Dry Oar Boating | FAQ</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+                <a id="logo_link" href="index.html">
+                    <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+                </a>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="FAQ.html">FAQ</a>
+                    <a href="site-plan-rafting.html">Site Plan</a>
+                    <a href="contactus.html">Contact Us</a>
+                </nav>
+            </header>
+            <div class="faq-intro-container">
+                <div class="faq-intro-text">
+                    <p class="faq-intro">
+                        Have questions? We’ve got answers! Whether you're a first-time rafter or a seasoned adventurer, this FAQ page covers everything you need to know to plan your trip with confidence.
+                    </p>
+                </div>
+                <div class="faq-intro-img">
+                    <img src="images/faq.jpg" alt="faq" class="faq-header">
+                </div>
+            </div>
+            <div id="faqbox">
+                <div class="wrapper">
+                    <p></p>
+                    <h1>Frenquently Asked Questions</h1>
+                    <div class="faq">
+                        <button class="accordion">
+                            What is white water rafting?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="pannel">
+                            <p>White water rafting is an outdoor adventure activity where you navigate a river in an inflatable raft. Rapids are created by fast-flowing water over rocks, creating an exciting and often challenging ride!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="faq">
+                        <button class="accordion">
+                            Do I need any experience to go rafting?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="pannel">
+                            <p>Not at all! We offer trips for all levels—from first-timers to seasoned rafters. Our experienced guides will walk you through everything you need to know before hitting the water</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="faq">
+                        <button class="accordion">
+                            Is white water rafting safe?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="pannel">
+                            <p>Like any adventure sport, rafting involves some risk, but your safety is our top priority. All our guides are professionally trained and certified in river safety, CPR, and first aid. We also provide high-quality safety equipment for every guest.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="faq">
+                        <button class="accordion">
+                            How do I book a trip?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="pannel">
+                            <p>You can book directly through our website! Just head to the “Book Now” page, choose your date and river, and we’ll take it from there.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="faq">
+                        <button class="accordion">
+                            What should I wear?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="pannel">
+                            <p>Wear quick-drying clothes like a swimsuit or athletic wear. Avoid cotton, which holds water. Water shoes or secure sandals are best—no flip-flops! We’ll provide a helmet, life jacket, and paddle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p>Dry Oar &copy; 2025 - Derek Gelvez</p>
+                <p><a href="site-plan-rafting.html">Site Plan</a></p>
+                <p><a href="contactus.html">Contact Us</a></p>
+                <div class="social">
+                    <a href="https://facebook.com" target="blank">
+                        <img src="images/facebook.png" alt="fb icon">
+                    </a>
+                    <a href="https://x.com" target="blank">
+                        <img src="images/x.png" alt="X Icon">
+                    </a>
+                    <a href="https://instagram.com" target="blank">
+                        <img src="images/instagram.png" alt="instagram icon">
+                    </a>
+                </div>
+            </footer>
+    </div>
+
+
+    <script>
+        var acc = document.getElementsByClassName
+        ("accordion");
+        var i;
+
+        for(i = 0; i < acc.length ; i++){
+            acc[i].addEventListener("click", function
+            () {
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle("active");
+
+                var pannel = this.nextElementSibling;
+
+                if(pannel.style.display === "block"){
+                    pannel.style.display = "none";
+                }else{
+                    pannel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
