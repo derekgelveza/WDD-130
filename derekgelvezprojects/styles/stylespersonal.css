@@ -7,6 +7,8 @@
     perspective: 10px;
 }
 header {
+    position: sticky;
+    top: 0;
     background-color: #415A77;
     color: white;
     font-family: "Aboreto", Helvetica, sans-serif;
@@ -62,17 +64,43 @@ nav a:hover {
     text-shadow: 0 0 5px white;
     text-align: center;
 }
-.section2 {
-    font-size: 2rem;
-    padding: 2rem;
+.intro_msg {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
     background-color: #E0E1DD;
+    margin-top: 25px;
+}
+h1.title{
+    font-size: 2.5rem;
     color: black;
+    font-family: "Aboreto", Helvetica, sans-serif;
+    grid-column:2/6;
+    text-align: center;
+}
+.Quote {
+    grid-column: 8/10;
+    grid-row: 3/5;
+    text-align: center;
+    justify-self: center;
+}
+p {
+    font-size: 1rem;
+    color: black;
+    font-family: "Alumni Sans";
+    grid-column: 2/6;
+    text-align: center;
+}
+.creative-thinking-card {
+    grid-column: 7/8;
+    grid-row: 3/4;
+    justify-self: end;
+    
 }
 footer {
     background-color: #415A77;
     color: white;
     padding: 25px 60px;
-    margin-top: 200px;
+    margin-top: 25px;
     display: flex;
     justify-content: space-around;
     align-items: center;
