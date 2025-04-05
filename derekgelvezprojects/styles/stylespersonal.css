@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+header {
+    background-color: #415A77;
+    color: white;
+    font-family: "Aboreto", Helvetica, sans-serif;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 150px auto;
+    justify-self: center;
+    align-self: center;
+}
+.head {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.forground,
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    
+}
+.background {
+    transform: translateZ(-10px) scale(2);
+}
+.forground {
+    transform: translateZ(-5px) scale(1.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+}
+nav a:hover {
+    background-color: #0D1B2A;
+    color: white;
+}
+.section1 {
+    font-size: 5rem;
+    color: black;
+    text-shadow: 0 0 5px white;
+    text-align: center;
+}
+.section2 {
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #E0E1DD;
+    color: black;
+}
+footer {
+    background-color: #415A77;
+    color: white;
+    padding: 25px 60px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a {
+    background-color: #415A77;
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    background-color: #0D1B2A;
+    color: white;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
