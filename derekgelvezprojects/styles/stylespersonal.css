@@ -120,3 +120,21 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }
+
+/*New page*/
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.Project-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+#code-box{
+    grid-column: 1/11;
+    grid-row: 1/2;
+    width: 100%;
+    height: auto;
+}
